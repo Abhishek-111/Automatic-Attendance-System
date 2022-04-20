@@ -3,3 +3,6 @@ A web application to mark attendance of employees by using facial recognition se
 
 Image-1
 https://user-images.githubusercontent.com/71956692/164294428-f33bee56-723c-4473-83a5-5c1dde324ab5.png
+
+Image-2
+https://user-images.githubusercontent.com/71956692/164295578-e387c340-f0aa-4bbb-a79f-2e051e33d918.png

@@ -1,0 +1,47 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %} Home Page {% endblock title %}
+<link rel="stylesheet" href = {% static 'core/css/home.css' %}>
+
+{% block content %}
+
+
+    <h2 class="text-center alert alert-primary">Automatic Attendance System </h2>
+
+    <div class = "row mt-4">
+            <div class="col-sm-4">
+                {% comment %} <h2><a href = "{% url 'take_attend' %}"/> Auto Attendance </a> </h2> {% endcomment %}
+                
+                <a href = "{% url 'take_attend' %}"/>
+                    <img class="hvr rounded mx-auto d-block" src = "{% static 'core/images/auto_attendance.jpg' %}" 
+                    alt = "auto_attendance" width = "300" height = "200">
+                </a>
+                <h5 class="text-center">Auto Attendance </h5>
+             </div>
+
+
+            <div class="col-sm-4">
+            <a href = "{% url 'emplogin' %}"/>
+                <img class="hvr rounded mx-auto d-block" src = "{% static 'core/images/employee_login.jpg' %}" 
+                alt = "employee login " width = "300" height = "200">
+            </a>
+            <h5 class="text-center">Employee Login</h5>
+                {% comment %} <h2>Employee Login</h2> {% endcomment %}
+            </div>
+
+            <div class="col-sm-4"> 
+                <a href = "{% url 'admin_login' %}"/>
+                    <img class="hvr rounded mx-auto d-block" src = "{% static 'core/images/admin.png' %}" 
+                    alt = "admin login" width = "300" height = "200">
+                </a>
+                <h5 class="text-center">Admin Panel </h5>
+            </div>
+            
+
+    </div>
+  
+
+
+
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %} {{title}} {% endblock title %}
+
+<style>
+    .errorlist{
+        
+        color:red;
+    }
+</style>
+
+{% block content %}
+<div class = "row">
+    <div class="col-sm-6">
+        <form action = "" method="POST" novalidate>
+            {% csrf_token %}
+            {{form.as_p}}
+            <button class="btn btn-primary mt-3 mr-3" onclick = "takeSamplePic()" type = "submit" value = "Submit">Submit</button>
+            {% comment %} <button onclick = "location.href = '{% url 'FaceSamplepg' %}'">Next </button> {% endcomment %}
+            <button class="btn btn-warning mt-3">Upload Img</button>
+        </form>
+    </div>
+   
+     <div class="col-sm-6 mt-4">
+        {% if messages %}
+        {% for message in messages %}
+        <p {% if message.tags %} class="alert alert-{{message.tags}}"> {{message}} {% endif %} </p><br>
+            {% comment %} {{message}}<br> {% endcomment %}
+        {% endfor %}
+        {% endif %}
+    </div> 
+</div>
+<script src = "{% static 'ChiefUser/chief_user.js' %}"> </script>
+{% endblock content %}
+
+
+{% comment %} <p>{{messages}}</p> {% endcomment %}

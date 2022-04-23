@@ -1,0 +1,11 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %} {{title}} {% endblock title %}
+
+{% block content %}
+<h1 text-info><b>Please look straight on Camera</b></h1>
+{% comment %} <h2> Please Keep Your Face In Front Of Camera...!</h2> {% endcomment %}
+{% comment %} <h2> s - for Click your picture </h2> {% endcomment %}
+<h2> 'q' - for discard clicking the picture </h2>
+<button onclick = "location.href = '{% url 'FaceSample' %}'">Click Picture </button>
+{% endblock content %}

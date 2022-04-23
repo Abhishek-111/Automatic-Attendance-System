@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %} {{title}} {% endblock title %}
+
+
+{% block content %}
+
+<h4 class="text-center alert alert-primary"> Admin Login </h4> 
+
+{% if error %}
+<div class="alert alert-danger text-center" role="alert">
+    Invalid Credentials!!
+  </div>
+{% endif %}  
+
+<div class="row">
+    <div class="col-sm-4">
+            <div class = "mt-5">
+                <form action = "" method = "POST" novalidate>
+                    {% csrf_token %}
+                    {{form.as_p}}
+                <input class = "btn btn-primary" type = "submit" value = "Submit">
+            </div>
+    </div>
+
+    <div class="col-sm-8">
+        <div class="mt-3">
+        <img class="rounded mx-auto d-block" src="{% static 'core/images/login.jpg'%}" alt="Login Picture" width = "730" height = "580">
+        </div>
+    </div>
+
+
+</div>
+
+{% comment %} <script src = "{% static 'ChiefUser/chief_user.js' %}"> </script> {% endcomment %}
+{% endblock content %}

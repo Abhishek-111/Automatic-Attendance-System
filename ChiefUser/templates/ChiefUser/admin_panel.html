@@ -1,0 +1,50 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %} {{title}} {% endblock title %}
+
+
+{% block content %}
+
+<h4 class="text-center alert alert-primary"> Admin Panel </h4> 
+<div class="mt-5">
+    <div class = "row">
+        
+        <div class="text-center">
+        {% if messages %}
+        {% for message in messages %}
+        <p {% if message.tags %} class="alert alert-{{message.tags}}"> {{message}} {% endif %} </p><br>
+            {% comment %} {{message}}<br> {% endcomment %}
+        {% endfor %}
+        {% endif %}
+        </div>
+    
+        <div class="col sm-6">
+            {% comment %} <div> <h2 id = "id1"><a href = "{% url 'addNew' %}"/> Add a new Employee. </a> </h2></div> {% endcomment %}
+            <a href = "{% url 'addNew' %}"/>
+                    <img class="hvr rounded mx-auto d-block" src = "{% static 'core/images/add_new.png' %}" 
+                    alt = "add_new" width = "300" height = "200">
+                </a>
+                <h5 class="text-center">Add a New Employee </h5>
+        </div>
+
+        <div class="col sm-6">
+            {% comment %} <h2> Check Employees Attendance </h2> {% endcomment %}
+            <a href = "{% url 'empAttend' %}"/>
+                    <img class="hvr mx-auto d-block" src = "{% static 'core/images/check.jpg' %}" 
+                    alt = "check_attendance" width = "300" height = "200">
+                </a>
+                <h5 class="text-center">Check Employees Attendance </h5>
+        </div>
+    </div>
+    <a href = "{% url 'logout' %}"
+    <div class="row">
+        <div class = "col sm-2">
+        <a href = "{% url 'logout' %}"> <button class = "btn btn-danger"> Logout</button></a>
+        </div>
+    </div>
+    
+</div>
+
+
+{% comment %} <script src = "{% static 'ChiefUser/chief_user.js' %}"> </script> {% endcomment %}
+{% endblock content %}

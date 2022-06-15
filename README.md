@@ -1,17 +1,14 @@
 # Automatic-Attendance-System
 A web application to mark attendance of employees by using facial recognition services, working in a particular Company. It has features like taking employee details including facial details and mark the attendance when he faces the camera. Employee will also receive attendance-confirmation mail
 
-Image-1
-https://user-images.githubusercontent.com/71956692/164294428-f33bee56-723c-4473-83a5-5c1dde324ab5.png
+![Screenshot from 2022-04-29 15-33-35](https://user-images.githubusercontent.com/71956692/173901033-d90efd34-8dcf-4e1b-a193-a4313fdd1c35.png)
 
-Image-2
-https://user-images.githubusercontent.com/71956692/164295578-e387c340-f0aa-4bbb-a79f-2e051e33d918.png
 
-Image-3
-https://user-images.githubusercontent.com/71956692/164295872-8c227ed9-d3c3-43ea-b524-9890a1fca355.png
+![Screenshot from 2022-04-29 15-47-35](https://user-images.githubusercontent.com/71956692/173901055-c4972c5b-2fab-458d-9726-120d156ab073.png)
 
-Image-4
-https://user-images.githubusercontent.com/71956692/164295965-aa52b1ba-18c6-4a2b-8bd2-2ab78325dd85.png
+![Screenshot from 2022-04-29 15-50-05](https://user-images.githubusercontent.com/71956692/173901116-76fe7643-2736-4f92-abc7-d195670f551f.png)
 
-Image-5
-https://user-images.githubusercontent.com/71956692/164296168-2a67c253-3bf8-4da8-8f3e-0d02a3a0fc4d.png
+
+![Screenshot from 2022-04-29 15-36-25](https://user-images.githubusercontent.com/71956692/173901175-0025d9e0-1ea6-4ef5-b174-68225b818c33.png)
+
+![Screenshot from 2022-04-29 15-37-08](https://user-images.githubusercontent.com/71956692/173901227-54231760-7322-470b-bfc3-c4104fe745a0.png)
